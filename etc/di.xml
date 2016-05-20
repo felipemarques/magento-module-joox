@@ -1,0 +1,14 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!--
+    <type name="Magento\CatalogWidget\Block\Product\ProductsList">
+        <plugin name="ProductsList" type="FelipeMarques\JooxMakerTool\Block\Product\ProductsList" sortOrder="1"/>
+    </type>
+    -->
+
+    <type name="Magento\Checkout\Block\Cart\AbstractCart">
+        <plugin name="AbstractCart" type="FelipeMarques\JooxMakerTool\Block\AbstractCart" sortOrder="2"/>
+    </type>
+
+</config>
+

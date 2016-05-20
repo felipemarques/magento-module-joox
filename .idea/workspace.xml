@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6728c7f-0c45-41dc-ad81-f269081f0d1d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Observer/CustomPrice.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/frontend/events.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/etc/module.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/registration.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Block/AbstractCart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Observer/CheckoutCartAddProductComplete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Observer/CheckoutCartSaveBefore.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Observer/CheckoutCartUpdateItemsBefore.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Block/Sales/Order/Fee.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model/Total/Fee.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Setup/InstallSchema.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Observer/LayoutRenderBefore.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/layout/checkout_cart_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/layout/checkout_index_index.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/web/css/custom.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/templates/cart/item/default.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/di.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/i18n/en_US.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/web/template/checkout/cart/totals/fee.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/web/template/checkout/summary/fee.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/web/js/view/checkout/cart/totals/fee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/web/js/view/checkout/summary/fee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/templates/product/widget/content/grid.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/layout/product_widget_grid.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/frontend/layout/sales_order_view.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/etc/widget.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Observer/CustomPrice.php" afterPath="$PROJECT_DIR$/Observer/CustomPrice.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/frontend/events.xml" afterPath="$PROJECT_DIR$/etc/frontend/events.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/etc/module.xml" afterPath="$PROJECT_DIR$/etc/module.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="magento-module-joox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +60,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/etc/events.xml" />
-        <option value="$PROJECT_DIR$/Observer/CustomPrice.php" />
         <option value="$PROJECT_DIR$/etc/frontend/events.xml" />
+        <option value="$PROJECT_DIR$/Observer/CustomPrice.php" />
       </list>
     </option>
   </component>
@@ -96,6 +116,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento-module-joox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento-module-joox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Observer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento-module-joox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento-module-joox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento-module-joox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="magento-module-joox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -111,6 +181,9 @@
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/etc/frontend" />
     </key>
@@ -202,34 +275,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/etc/module.xml">
+    <entry file="file://$PROJECT_DIR$/Block/Sales/Order/Fee.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0794702" vertical-offset="0" max-vertical-offset="906">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18430035" vertical-offset="0" max-vertical-offset="879">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Observer/CustomPrice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31177828" vertical-offset="0" max-vertical-offset="866">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/frontend/events.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.119205296" vertical-offset="0" max-vertical-offset="906">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.30716723" vertical-offset="0" max-vertical-offset="2286">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           <folding />
         </state>
       </provider>

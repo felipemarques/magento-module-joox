@@ -1,7 +1,25 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
-    <event name="checkout_cart_product_add_after">
-        <observer name="customprice" instance="FelipeMarques\JooxMakerTool\Observer\CustomPrice"/>
+
+    <event name="layout_render_before">
+        <observer name="LayoutRenderBefore" instance="FelipeMarques\JooxMakerTool\Observer\LayoutRenderBefore" />
     </event>
+
+    <event name="checkout_cart_add_product_complete">
+        <observer name="CheckoutCartAddProductComplete" instance="FelipeMarques\JooxMakerTool\Observer\CheckoutCartAddProductComplete" />
+    </event>
+
+    <event name="checkout_cart_save_before">
+        <observer name="CheckoutCartSaveBefore" instance="FelipeMarques\JooxMakerTool\Observer\CheckoutCartSaveBefore" />
+    </event>
+
+    <event name="checkout_cart_update_items_before">
+        <observer name="CheckoutCartUpdateItemsBefore" instance="FelipeMarques\JooxMakerTool\Observer\CheckoutCartUpdateItemsBefore" />
+    </event>
+
+    <event name="checkout_cart_product_add_after">
+        <observer name="CustomPrice" instance="FelipeMarques\JooxMakerTool\Observer\CustomPrice"/>
+    </event>
+
 </config>
